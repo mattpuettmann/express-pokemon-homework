@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+	<h1>POKE EXPRESS</h1>
+
+	<% for (let i = 0; i < pokemon.length; i++) {%>
+     <li><a href="/pokemon/<%=i%>"><%=pokemon[i].name%></li>
+     <%}%>
+
+</body>
+</html>
