@@ -3,8 +3,9 @@ const bodyParser = require('body-parser');
 const app = express();
 const pokemon = require('./pokemon');
 const port = 3000;
+// const css = require('./style.css');
 
-
+// app.use('./style.css', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
