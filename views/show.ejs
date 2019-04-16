@@ -8,9 +8,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-
-        <p>Name: <%=pokemon.name%></p>
+        <h1><%=pokemon.name%></h1>
 		<img src="<%=pokemon.img%>">
+        <form action="/pokemon/<%=id%>?_method=DELETE" method="post">
+        <button type="submit">Delete</button>
+        </form>
     
 </body>
 </html>

@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Create New Pokemon</h1>
-        <form action="/pokemon" method="post">
-            <input type="text" name="name">Name<br/>
-            <input type="text" name="img">Image<br/>
+    <h1>Edit <%=pokemon.name%></h1>
+        <form action="/pokemon/<%=id%>?_method=PUT" method="post">
+            Name: <input type="text" name="name" value="<%=pokemon.name%>">
+            Image: <input type="text" name="img" value="<%=pokemon.img%>">
             <button type="submit">Submit</button>
         </form>
+        
     
 </body>
 </html>
