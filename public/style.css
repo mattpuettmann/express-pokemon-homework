@@ -4,6 +4,9 @@ body {
 }
 
 
+li {
+    list-style-type: none
+}
 
 
 
@@ -12,5 +15,3 @@ body {
 
 
 
-
-module.exports = css;

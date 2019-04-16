@@ -4,9 +4,9 @@ const app = express();
 const pokemon = require('./pokemon');
 const methodOverride = require('method-override');
 const port = 3000;
-// const css = require('./style.css');
 
-// app.use('./style.css', express.static('public'));
+
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(methodOverride('_method'));
